@@ -47,4 +47,17 @@ Or the simple command
 
     git reset --hard # removes staged and working directory changes
     git clean -f -d # remove untracked files
+    
+[Removing multiple files from a Git repo that have already been deleted from disk](http://stackoverflow.com/questions/1402776/how-do-i-commit-all-deleted-files-in-git)
+
+1.
+
+    git add -u
+
+2. 
+
+    git ls-files --deleted | xargs git rm
+    git commit
+
+
 
