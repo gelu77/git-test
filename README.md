@@ -58,6 +58,9 @@ Or the simple command
 
     git ls-files --deleted | xargs git rm
     git commit
+    
+
+
 
 
 
